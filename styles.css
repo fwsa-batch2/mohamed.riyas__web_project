@@ -1,0 +1,27 @@
+.navbar li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 4%;
+    font-size: x-large;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+.navbar {
+    margin-left: 50%;
+    width: auto;
+    margin-top: -2%;
+}
+.navbar1 {
+    background: rgb(180, 175, 175);
+    text-align: center;
+}
+.navbar1 ul {
+    display: inline-flex;
+    list-style-type: none;
+}
+.navbar1 ul li {
+    width: 120px;
+    margin-left: 15px;
+}
