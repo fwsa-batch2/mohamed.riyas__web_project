@@ -58,3 +58,29 @@ div.gallery {
     padding: 20px;
     float: left;
   }
+  .icons img:hover {
+    transform: rotateY(180deg);
+    transition: 1.5s; 
+  }
+  .account {
+    margin-left: 40%;
+    margin-top: 5%;
+    width: 20%;
+    border: 1px solid black;
+  }
+  .register {
+    border: 2px solid black;
+    width: 600px;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+    margin-left: 600px;
+  }
+  .form input {
+    border-radius: 10px;
+    width: 500px;
+    height: 50px;
+    color: black;
+    text-align: center;
+  }
