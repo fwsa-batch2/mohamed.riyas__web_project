@@ -69,18 +69,48 @@ div.gallery {
     border: 1px solid black;
   }
   .register {
-    border: 2px solid black;
+    border: 2px solid #000000;
+    border-radius: 20px;
     width: 600px;
     height: fit-content;
     background-color: black;
     color: white;
     margin-top: 50px;
     margin-left: 600px;
+    opacity: 70%;
   }
   .form input {
     border-radius: 10px;
     width: 500px;
     height: 50px;
     color: black;
+    text-align: center;
+  }
+  .button {
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  .button:hover {
+    background-color: orange;
+  }
+  p a {
+    text-decoration: none;
+    color: blue;
+  }
+  .login {
+    background-color: black;
+    padding: 20px;
+    opacity: 70%;
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 650px;
+    border-radius: 20px;
+  }
+  .login input {
+    border: 2px solid black;
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
     text-align: center;
   }
