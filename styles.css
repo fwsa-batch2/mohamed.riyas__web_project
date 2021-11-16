@@ -90,9 +90,10 @@ div.gallery {
     width: 500px;
     height: 50px;
     border-radius: 10px;
+    background-color: orange;
   }
   .button:hover {
-    background-color: orange;
+    background-color: white;
   }
   p a {
     text-decoration: none;
@@ -100,6 +101,7 @@ div.gallery {
   }
   .login {
     background-color: black;
+    color: white;
     padding: 20px;
     opacity: 70%;
     width: 600px;
@@ -110,7 +112,32 @@ div.gallery {
   .login input {
     border: 2px solid black;
     width: 500px;
-    height: 40px;
+    height: 50px;
     border-radius: 10px;
     text-align: center;
+  }
+  .fplogin {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    opacity: 70%;
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 650px;
+    border-radius: 20px;
+  }
+  .fplogin input {
+    border: 2px solid black;
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .sofa {
+    margin-left: 110px;
+    margin-top: 50px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 500px;
+    box-shadow: 8px 6px rgb(145, 143, 143);
   }
