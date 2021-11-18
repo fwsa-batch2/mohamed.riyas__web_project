@@ -141,3 +141,11 @@ div.gallery {
     width: 500px;
     box-shadow: 8px 6px rgb(145, 143, 143);
   }
+  .chairs {
+    margin-left: 110px;
+    margin-top: 50px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 500px;
+    box-shadow: 8px 6px rgb(145, 143, 143);
+  }
