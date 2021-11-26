@@ -1,151 +1,196 @@
 .navbar li {
-    list-style-type: none;
-    display: inline;
-    padding-left: 4%;
-    font-size: x-large;
+  list-style-type: none;
+  display: inline;
+  padding: 10px;
+  font-size: x-large;
 }
 .navbar a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 .navbar {
-    margin-left: 50%;
-    width: auto;
-    margin-top: -2%;
+  margin-left: 50%;
+  width: auto;
+  margin-top: -2%;
 }
 .navbar1 {
-    text-align: center;
-    background: rgb(180, 175, 175);
+  text-align: center;
+  background: rgb(180, 175, 175);
 }
 .navbar1 ul {
-    display: inline-flex;
-    list-style-type: none;
+  display: inline-flex;
+  list-style-type: none;
 }
 .navbar1 ul li {
-    width: 120px;
-    margin-left: 15px;
+  width: 120px;
+  margin-left: 15px;
 }
 div.gallery {
-    margin-left: 110px;
-    margin-top: 50px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 500px;
-    box-shadow: 8px 6px rgb(145, 143, 143);
-  }
-  
-  div.gallery:hover {
-    border: 2px solid #777;
-    transform: scale(1.05);
-    transition: 1s;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  .Products {
-    margin-top: 25%;
-    margin-left: 50%;
-  }
-  .icons {
-    margin-left: 120px;
-    padding: 20px;
-    float: left;
-  }
-  .icons img:hover {
-    transform: rotateY(180deg);
-    transition: 1.5s; 
-  }
-  .account {
-    margin-left: 40%;
-    margin-top: 5%;
-    width: 20%;
-    border: 1px solid black;
-  }
-  .register {
-    border: 2px solid #000000;
-    border-radius: 20px;
-    width: 600px;
-    height: fit-content;
-    background-color: black;
-    color: white;
-    margin-top: 50px;
-    margin-left: 600px;
-    opacity: 70%;
-  }
-  .form input {
-    border-radius: 10px;
-    width: 500px;
-    height: 50px;
-    color: black;
-    text-align: center;
-  }
-  .button {
-    width: 500px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: orange;
-  }
-  .button:hover {
-    background-color: white;
-  }
-  p a {
-    text-decoration: none;
-    color: blue;
-  }
-  .login {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    opacity: 70%;
-    width: 600px;
-    margin-top: 50px;
-    margin-left: 650px;
-    border-radius: 20px;
-  }
-  .login input {
-    border: 2px solid black;
-    width: 500px;
-    height: 50px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  .fplogin {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    opacity: 70%;
-    width: 600px;
-    margin-top: 50px;
-    margin-left: 650px;
-    border-radius: 20px;
-  }
-  .fplogin input {
-    border: 2px solid black;
-    width: 500px;
-    height: 50px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  .sofa {
-    margin-left: 110px;
-    margin-top: 50px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 500px;
-    box-shadow: 8px 6px rgb(145, 143, 143);
-  }
-  .chairs {
-    margin-left: 110px;
-    margin-top: 50px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 500px;
-    box-shadow: 8px 6px rgb(145, 143, 143);
-  }
+  margin-left: 110px;
+  margin-top: 50px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 500px;
+  box-shadow: 8px 6px rgb(145, 143, 143);
+}
+
+div.gallery:hover {
+  border: 2px solid #777;
+  transform: scale(1.04);
+  transition: 1s;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+.Products {
+  margin-top: 25%;
+  margin-left: 50%;
+}
+.icons {
+  margin-left: 120px;
+  padding: 20px;
+  float: left;
+}
+.icons img:hover {
+  transform: rotateY(180deg);
+  transition: 1.5s;
+}
+.account {
+  margin-left: 40%;
+  margin-top: 5%;
+  width: 20%;
+  border: 1px solid black;
+}
+.register {
+  border: 2px solid #000000;
+  border-radius: 20px;
+  width: 600px;
+  height: fit-content;
+  background-color: black;
+  color: white;
+  margin-top: 50px;
+  margin-left: 600px;
+  opacity: 70%;
+}
+.form input {
+  border-radius: 10px;
+  width: 500px;
+  height: 50px;
+  color: black;
+  text-align: center;
+}
+.button {
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: orange;
+}
+.button:hover {
+  background-color: white;
+}
+p a {
+  text-decoration: none;
+  color: blue;
+}
+.login {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  opacity: 70%;
+  width: 600px;
+  margin-top: 50px;
+  margin-left: 650px;
+  border-radius: 20px;
+}
+.login input {
+  border: 2px solid black;
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+.fplogin {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  opacity: 70%;
+  width: 600px;
+  margin-top: 50px;
+  margin-left: 650px;
+  border-radius: 20px;
+}
+.fplogin input {
+  border: 2px solid black;
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+.sofa {
+  margin-left: 110px;
+  margin-top: 50px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 500px;
+  box-shadow: 8px 6px rgb(145, 143, 143);
+}
+.disc {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+.chairs {
+  margin-left: 110px;
+  margin-top: 50px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 500px;
+  box-shadow: 8px 6px rgb(145, 143, 143);
+}
+.wardrobe {
+  margin-left: 110px;
+  margin-top: 50px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 500px;
+  box-shadow: 8px 6px rgb(145, 143, 143);
+}
+.desk {
+  margin-left: 110px;
+  margin-top: 50px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 500px;
+  box-shadow: 8px 6px rgb(145, 143, 143);
+}
+.bed {
+  margin-left: 110px;
+  margin-top: 50px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 500px;
+  box-shadow: 8px 6px rgb(145, 143, 143);
+}
+.mattress {
+  margin-left: 110px;
+  margin-top: 50px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 500px;
+  box-shadow: 8px 6px rgb(145, 143, 143);
+}
+.except {
+  float: right;
+  margin-top: 80px;
+  margin-right: 668px;
+  border: 1px solid #ccc;
+  width: 500px;
+  box-shadow: 8px 6px rgb(145, 143, 143);
+}
