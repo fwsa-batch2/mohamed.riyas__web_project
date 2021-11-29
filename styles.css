@@ -1,41 +1,29 @@
-.navbar li {
+.navbar-home li {
   list-style-type: none;
   display: inline;
   padding: 10px;
   font-size: x-large;
 }
-.navbar a {
+.navbar-home a {
   text-decoration: none;
   color: black;
 }
-.navbar {
+.navbar-home {
   margin-left: 50%;
   width: auto;
   margin-top: -2%;
 }
-.navbar1 {
-  text-align: center;
-  background: rgb(180, 175, 175);
-}
-.navbar1 ul {
-  display: inline-flex;
-  list-style-type: none;
-}
-.navbar1 ul li {
-  width: 120px;
-  margin-left: 15px;
-}
 div.gallery {
-  margin-left: 110px;
+  margin-left: 90px;
   margin-top: 50px;
   border: 1px solid #ccc;
   float: left;
-  width: 500px;
+  width: 27%;
   box-shadow: 8px 6px rgb(145, 143, 143);
 }
 
 div.gallery:hover {
-  border: 2px solid #777;
+  border: 1px solid #777;
   transform: scale(1.04);
   transition: 1s;
 }
@@ -51,10 +39,10 @@ div.desc {
 }
 .Products {
   margin-top: 25%;
-  margin-left: 50%;
+  margin-left: 45%;
 }
 .icons {
-  margin-left: 120px;
+  margin-left: 150px;
   padding: 20px;
   float: left;
 }
@@ -144,7 +132,7 @@ p a {
 .disc {
   text-align: center;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 30px;
 }
 .chairs {
   margin-left: 110px;
@@ -193,4 +181,39 @@ p a {
   border: 1px solid #ccc;
   width: 500px;
   box-shadow: 8px 6px rgb(145, 143, 143);
+}
+.cupboard {
+  margin-left: 4%;
+  margin-top: 3%;
+  border: 1px solid #ccc;
+  float: left;
+  width: 27%;
+  box-shadow: 8px 6px rgb(145, 143, 143);
+}
+.dining {
+  margin-left: 4%;
+  margin-top: 3%;
+  border: 1px solid #ccc;
+  float: left;
+  width: 27%;
+  box-shadow: 8px 6px rgb(145, 143, 143);
+}
+.tv {
+  margin-left: 4%;
+  margin-top: 3%;
+  border: 1px solid #ccc;
+  float: left;
+  width: 27%;
+  box-shadow: 8px 6px rgb(145, 143, 143); 
+}
+.bookshelf {
+  margin-left: 4%;
+  margin-top: 3%;
+  border: 1px solid #ccc;
+  float: left;
+  width: 27%;
+  box-shadow: 8px 6px rgb(145, 143, 143);
+}
+.nextbutton {
+  float: right;
 }
