@@ -5,6 +5,7 @@
 
 #### Features
 * Login
-* Register ( In Progress )
-
+* Register 
+* Contact ( Yet to start)
+* 
 #####
