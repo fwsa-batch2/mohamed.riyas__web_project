@@ -1,17 +1,25 @@
-.navbar-home li {
+#top_panel{
+  background-color: white;
+  padding-bottom: 10px;
+  height: 10px;
+  
+}
+.list li {
   list-style-type: none;
   display: inline;
-  padding: 10px;
+  padding-left: 30px;
   font-size: x-large;
 }
-.navbar-home a {
+
+.list a {
   text-decoration: none;
   color: black;
 }
-.navbar-home {
+.list {
   margin-left: 50%;
   width: auto;
-  margin-top: -2%;
+  position: absolute;
+  top: 2px; right: 50px;
 }
 div.gallery {
   margin-left: 90px;

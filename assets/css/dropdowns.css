@@ -26,26 +26,26 @@
     background-color: white;  
     border-radius: 10px;
 }
-.submenu-1 {
+.submenu {
     display: none; 
 } 
-.navbar li:hover .submenu-1 {
+.navbar li:hover .submenu {
     display: block;
     position: absolute;
     background-color: rgb(184, 177, 177);
     margin-top: 1%;
     z-index: 1;
 }
-.navbar li:hover .submenu-1 ul {
+.navbar li:hover .submenu ul {
     display: block;
     margin-top: 50px;
 }
-.submenu-1 li:hover {
+.submenu li:hover {
     border-bottom: none;
     background-color: white;
     border-radius: 20px;
 }
-.navbar li:hover .submenu-1 li {
+.navbar li:hover .submenu li {
     width: 200px;
     border-bottom: 1px solid black;
 }
