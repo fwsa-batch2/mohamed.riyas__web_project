@@ -41,6 +41,7 @@ function register() {
             alert("password mismatch")
         }
     }
+    window.location.href = "./../index.html"
 }
 function emailChecking(inputEmail) {
     let email_exist = false;
