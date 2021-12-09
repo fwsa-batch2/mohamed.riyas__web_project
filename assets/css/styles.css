@@ -88,7 +88,7 @@ div.desc {
   border-radius: 10px;
   background-color: orange;
 }
-.button:hover {
+.button:hover,.contact_button:hover {
   background-color: white;
 }
 p a {
@@ -224,4 +224,39 @@ p a {
 }
 .nextbutton {
   float: right;
+}
+.mail_image {
+  width:"40%"; 
+  height:"40%";
+ 
+  margin-top: 7%;
+  margin-left: 8%;
+}
+.contact_div {
+  border: 2px solid #000000;
+  border-radius: 20px;
+  width: 600px;
+  height: fit-content;
+  background-color: black;
+  color: white;
+  margin-top: 10%;
+  margin-left: 60%;
+  opacity: 70%;
+ 
+}
+.contact_div input{
+  border: 2px solid black;
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 8%;
+  text-align: center;
+}
+.contact_button {
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: orange;
+  margin-left: 8%;
+
 }
