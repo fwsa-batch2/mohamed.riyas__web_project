@@ -41,6 +41,7 @@ function register() {
             alert("password mismatch")
         }
     }
+    alert("successfully registered")
     window.location.href = "./../index.html"
 }
 function emailChecking(inputEmail) {

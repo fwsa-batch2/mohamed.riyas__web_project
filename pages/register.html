@@ -90,15 +90,15 @@
     <form class="form" onsubmit="register()" align="center">
       <h2>CREATE YOUR ACCOUNT</h2>
       <br>
-      <input type="text" id="name" placeholder="ENTER YOUR NAME" required><br>
+      <input type="text" minlength="3" id="name" placeholder="ENTER YOUR NAME" required><br>
       <br>
-      <input type="tel" id="phone_no" placeholder="TYPE YOUR PHONE NO." required><br>
+      <input type="tel" id="phone_no" minlength="10" maxlength="10" placeholder="TYPE YOUR PHONE NO." required><br>
       <br>
       <input type="email" id="email" placeholder="ENTER YOUR EMAIL" required><br>
       <br>
-      <input type="password" id="password" placeholder="PASSWORD" required><br>
+      <input type="password" id="password" minlength="8" placeholder="PASSWORD" required><br>
       <br>
-      <input type="password" id="confirmPassword" placeholder="CONFIRM PASSWORD"><br>
+      <input type="password" minlength="8" id="confirmPassword" placeholder="CONFIRM PASSWORD"><br>
       <br>
       <button type="submit" class="button">Register</button>
       <h2>OR</h2>
