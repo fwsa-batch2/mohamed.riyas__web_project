@@ -1,81 +1,82 @@
-let user_details = [];
-function onPageLoad() {
-    const getData = localStorage.getItem("Register details")
-    const users = JSON.parse(getData);
-    if (users != null) {
-        user_details = users;
+user_details = [];
+console.log(user_details);
+function whilePageLoad() {
+    let getting_details = JSON.parse(localStorage.getItem("customer_details"));
+    if (user_details != null) {
+        user_details = getting_details;
     }
 }
 function register() {
     event.preventDefault();
-    let name = document.getElementById("name").value;
-    let phone = document.getElementById("phone_no").value;
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
-    let confirmPassword = document.getElementById("confirmPassword").value;
-    const phone_no = phoneChecking(phone)
-    const emailValid = emailChecking(email);
-    if (phone_no) {
-        alert("phone Number already registered");
+    let inputName = document.getElementById("name").value;
+    let inputPhone = document.getElementById("phone_no").value;
+    let inputEmail = document.getElementById("email").value;
+    let inputPassword = document.getElementById("password").value;
+    let inputCPassword = document.getElementById("confirmPassword").value;
+    let PhoneNo_validation = phoneChecking(inputPhone);
+    let emailValidation = check_email(inputEmail);
+    if (PhoneNo_validation == true) {
+        alert("try different Phone number");
         return;
     }
-    else if (emailValid) {
-        alert(" email already registered");
+    else if (emailValidation ==  true) {
+        alert("Email already registered");
         return;
     }
     else {
-        const passwordValid = password_checking(password, confirmPassword);
-        if (passwordValid) {
-            let customer_details = {
-                "Name": name,
-                "Phone": phone,
-                "Email": email,
-                "Password": password,
-                "cpassword": confirmPassword
+        let passwordChecking = passwordValidation(inputPassword , inputCPassword);
+        console.log(passwordChecking);
+        if (passwordChecking == true) {
+            let register_details = {
+                "name" : inputName,
+                "phoneNumber" : inputPhone,
+                "emailId" : inputEmail,
+                "password" : inputPassword,
+                "confirmpassword" : inputCPassword
             }
-            user_details.push(customer_details);
-            let objectToArray = JSON.stringify(user_details);
-            localStorage.setItem("Register Details", objectToArray);
+            user_details.push(register_details);
+            let arrayToString = JSON.stringify(user_details);
+            localStorage.setItem("customer_details", arrayToString);
+            window.location.href = 'login.html';
         }
         else {
-            alert("password mismatch")
+            alert("password not match");
+            return;
         }
     }
-    alert("successfully registered")
-    window.location.href = "./../index.html"
 }
-function emailChecking(inputEmail) {
-    let email_exist = false;
+function phoneChecking(phone_number) {
+    let No_exist = false;
+    let lengthOfUserDetails = user_details.length;
+    for (i = 0 ; i<lengthOfUserDetails; i++) {
+        let indexNumber = user_details[i];
+        let getting_phone_number = indexNumber.phoneNumber;
+        if (phone_number == getting_phone_number) {
+            No_exist = true;
+            break;
+        }
+    }
+    return No_exist;
+}
+function check_email(paramter1) {
+    let email_exist = false;  
     let len = user_details.length;
-    for (i = 0; i < len; i++) {
+    for (i = 0; i<len ;i++) {
         let indexOf = user_details[i];
-        let gettingEmail = indexOf.Email;
-        if (inputEmail == gettingEmail) {
+        let getting_email = indexOf.emailId;
+        if (paramter1 == getting_email) {
             email_exist = true;
             break;
         }
     }
     return email_exist;
 }
-function password_checking(password1, password2) {
-    if (password1 != password2) {
-        return false;
-    }
-    else {
+function passwordValidation(password,confirmpassword) {
+    if (password == confirmpassword) {
         return true;
     }
-}
-function phoneChecking(inputphone) {
-    let phoneNo_exist = false;
-    let len = user_details.length;
-    for (i = 0; i < len; i++) {
-        let indexOf = user_details[i];
-        let gettingphone = indexOf.Phone;
-        if (inputphone == gettingphone) {
-            phoneNo_exist = true;
-            break;
-        }
+    else {
+        return false;
     }
-    return phoneNo_exist;
 }
-onPageLoad();
+whilePageLoad();

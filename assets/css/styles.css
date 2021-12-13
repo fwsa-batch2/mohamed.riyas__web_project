@@ -22,7 +22,7 @@
   top: 2px; right: 50px;
 }
 div.gallery {
-  margin-left: 90px;
+  margin-left: 70px;
   margin-top: 50px;
   border: 1px solid #ccc;
   float: left;
@@ -50,7 +50,7 @@ div.desc {
   margin-left: 45%;
 }
 .icons {
-  margin-left: 150px;
+  margin-left: 120px;
   padding: 20px;
   float: left;
 }
@@ -72,7 +72,7 @@ div.desc {
   background-color: black;
   color: white;
   margin-top: 50px;
-  margin-left: 600px;
+  margin-left: 28%;
   opacity: 70%;
 }
 .form input {
@@ -102,7 +102,7 @@ p a {
   opacity: 70%;
   width: 600px;
   margin-top: 50px;
-  margin-left: 650px;
+  margin-left: 500px;
   border-radius: 20px;
 }
 .login input {
@@ -130,11 +130,11 @@ p a {
   text-align: center;
 }
 .sofa {
-  margin-left: 110px;
+  margin-left: 80px;
   margin-top: 50px;
   border: 1px solid #ccc;
   float: left;
-  width: 500px;
+  width: 400px;
   box-shadow: 8px 6px rgb(145, 143, 143);
 }
 .disc {
@@ -143,27 +143,27 @@ p a {
   font-size: 30px;
 }
 .chairs {
-  margin-left: 110px;
+  margin-left: 80px;
   margin-top: 50px;
   border: 1px solid #ccc;
   float: left;
-  width: 500px;
+  width: 400px;
   box-shadow: 8px 6px rgb(145, 143, 143);
 }
 .wardrobe {
-  margin-left: 110px;
+  margin-left: 80px;
   margin-top: 50px;
   border: 1px solid #ccc;
   float: left;
-  width: 500px;
+  width: 400px;
   box-shadow: 8px 6px rgb(145, 143, 143);
 }
 .desk {
-  margin-left: 110px;
+  margin-left: 80px;
   margin-top: 50px;
   border: 1px solid #ccc;
   float: left;
-  width: 500px;
+  width: 400px;
   box-shadow: 8px 6px rgb(145, 143, 143);
 }
 .bed {
@@ -185,9 +185,9 @@ p a {
 .except {
   float: right;
   margin-top: 80px;
-  margin-right: 668px;
+  margin-right: 550px;
   border: 1px solid #ccc;
-  width: 500px;
+  width: 400px;
   box-shadow: 8px 6px rgb(145, 143, 143);
 }
 .cupboard {
@@ -239,8 +239,8 @@ p a {
   height: fit-content;
   background-color: black;
   color: white;
-  margin-top: 10%;
-  margin-left: 60%;
+  margin-top: 5%;
+  margin-left: 30%;
   opacity: 70%;
  
 }
