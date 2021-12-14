@@ -12,7 +12,6 @@
     <a href="./../index.html" style="margin-left: 15px">
       <img src="./../assets/images/mobel.jpg" alt="logo" width="150px">
     </a>
-
     <ul class="list" align="right">
       <li><a href="./../index.html">Home</a></li>
       <li><a href="">Contact</a></li>
@@ -90,7 +89,7 @@
     <form class="form" onsubmit="register()" align="center">
       <h2>CREATE YOUR ACCOUNT</h2>
       <br>
-      <input type="text" minlength="3" id="name" placeholder="ENTER YOUR NAME" required><br>
+      <input type="text" id="name" pattern="(?=.*[A-Z]).{3,}" placeholder="ENTER YOUR NAME" required><br>
       <br>
       <input type="tel" id="phone_no" minlength="10" maxlength="10" placeholder="TYPE YOUR PHONE NO." required><br>
       <br>
