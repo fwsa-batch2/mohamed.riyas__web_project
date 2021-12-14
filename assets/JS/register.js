@@ -5,7 +5,7 @@ function whilePageLoad() {
         user_details = getting_details;
     }
     else {
-        user_details = "";
+        user_details = [];
     }
 }
 function register() {
