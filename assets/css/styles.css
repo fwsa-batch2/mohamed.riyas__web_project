@@ -167,19 +167,19 @@ p a {
   box-shadow: 8px 6px rgb(145, 143, 143);
 }
 .bed {
-  margin-left: 110px;
+  margin-left: 80px;
   margin-top: 50px;
   border: 1px solid #ccc;
   float: left;
-  width: 500px;
+  width: 400px;
   box-shadow: 8px 6px rgb(145, 143, 143);
 }
 .mattress {
-  margin-left: 110px;
+  margin-left: 80px;
   margin-top: 50px;
   border: 1px solid #ccc;
   float: left;
-  width: 500px;
+  width: 400px;
   box-shadow: 8px 6px rgb(145, 143, 143);
 }
 .except {

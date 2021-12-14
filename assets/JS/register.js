@@ -1,5 +1,4 @@
 user_details = [];
-console.log(user_details);
 function whilePageLoad() {
     let getting_details = JSON.parse(localStorage.getItem("customer_details"));
     if (user_details != null) {
@@ -24,9 +23,10 @@ function register() {
         return;
     }
     else {
-        let passwordChecking = passwordValidation(inputPassword , inputCPassword);
-        console.log(passwordChecking);
-        if (passwordChecking == true) {
+        if (inputPassword != inputCPassword) {
+            alert("password not match");
+        }
+        else {
             let register_details = {
                 "name" : inputName,
                 "phoneNumber" : inputPhone,
@@ -38,10 +38,6 @@ function register() {
             let arrayToString = JSON.stringify(user_details);
             localStorage.setItem("customer_details", arrayToString);
             window.location.href = 'login.html';
-        }
-        else {
-            alert("password not match");
-            return;
         }
     }
 }
@@ -70,13 +66,5 @@ function check_email(paramter1) {
         }
     }
     return email_exist;
-}
-function passwordValidation(password,confirmpassword) {
-    if (password == confirmpassword) {
-        return true;
-    }
-    else {
-        return false;
-    }
 }
 whilePageLoad();
