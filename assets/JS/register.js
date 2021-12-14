@@ -1,13 +1,11 @@
-user_details = [];
+let user_details = [];
 function whilePageLoad() {
     let getting_details = JSON.parse(localStorage.getItem("customer_details"));
-    if (user_details != null) {
+    if (getting_details != null) {
         user_details = getting_details;
     }
-    else {
-        user_details = [];
-    }
 }
+whilePageLoad();
 function register() {
     event.preventDefault();
     let inputName = document.getElementById("name").value;
@@ -15,13 +13,14 @@ function register() {
     let inputEmail = document.getElementById("email").value;
     let inputPassword = document.getElementById("password").value;
     let inputCPassword = document.getElementById("confirmPassword").value;
+
     let PhoneNo_validation = phoneChecking(inputPhone);
     let emailValidation = check_email(inputEmail);
-    if (PhoneNo_validation == true) {
+    if (PhoneNo_validation) {
         alert("try different Phone number");
         return;
     }
-    else if (emailValidation ==  true) {
+    else if (emailValidation) {
         alert("Email already registered");
         return;
     }
@@ -45,7 +44,7 @@ function register() {
     }
 }
 function phoneChecking(phone_number) {
-    let No_exist = false;
+    let No_exist = false;    
     let lengthOfUserDetails = user_details.length;
     for (i = 0 ; i<lengthOfUserDetails; i++) {
         let indexNumber = user_details[i];
@@ -70,4 +69,3 @@ function check_email(paramter1) {
     }
     return email_exist;
 }
-whilePageLoad();
