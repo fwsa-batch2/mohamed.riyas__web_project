@@ -4,6 +4,9 @@ function whilePageLoad() {
     if (user_details != null) {
         user_details = getting_details;
     }
+    else {
+        user_details = "";
+    }
 }
 function register() {
     event.preventDefault();
