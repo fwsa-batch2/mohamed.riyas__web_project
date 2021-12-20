@@ -5,14 +5,12 @@ function isdetailsexist() {
     let getDetails = localStorage.getItem("customer_details");    
     let convertTo_original = JSON.parse(getDetails);
     let  detailsValidation = Validation(inputEmail,inputPhone, convertTo_original);
-
     if (detailsValidation == true) {
         alert("Change your password now");
     }
     else {
         alert("details are inavlid");
     }
-    testing();
 }
 function Validation(param1,param2,param3) {
     let isexist = false;
@@ -32,13 +30,15 @@ function Validatepassword() {
     event.preventDefault();
     let userpass = document.getElementById("password").value;
     let userConfirmPass = document.getElementById("confirmPassword").value;
+    let resetpass = {
+        "password" : userpass,
+        "userConfrimPass" : userConfirmPass
+    }
     if (userpass != userConfirmPass) {
-        alert("password not match");
+        console.log("password not match");
+        return;
     }
     else {
-        console.log("password match");
+        
     }
-} 
-function replacing() {
-    
 }
