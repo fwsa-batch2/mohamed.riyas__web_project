@@ -18,7 +18,6 @@ function register(event) {
     let emailValidation = check_email(inputEmail);
     if (PhoneNo_validation) {
         alert("try different Phone number");
-        return;
     }
     else if (emailValidation) {
         alert("Email already registered");
@@ -59,7 +58,7 @@ function phoneChecking(phone_number) {
 function check_email(paramter1) {
     let email_exist = false;  
     let len = user_details.length;
-    for (i = 0; i<len ;i++) {
+    for (let i = 0; i<len ;i++) {
         let indexOf = user_details[i];
         let getting_email = indexOf.emailId;
         if (paramter1 == getting_email) {

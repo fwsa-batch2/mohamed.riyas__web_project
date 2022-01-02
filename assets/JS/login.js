@@ -4,7 +4,7 @@ function onPageLoad() {
     let convert_To_original = JSON.parse(getting_Local_storage);
     user_details.push(convert_To_original);  
 }
-function login() {
+function login(event) {
     event.preventDefault();
     let inputEmail = document.getElementById("email").value;
     let inputPassword = document.getElementById("password").value;
@@ -13,9 +13,8 @@ function login() {
     }
     let ValidationProcess = loginValidation(inputEmail,inputPassword);
     console.log(ValidationProcess);
-    if (ValidationProcess == false) {
+    if (ValidationProcess) {
         alert("Login details are inavlid");
-        return;
     }
     else {
         updateuserdetails(login_details)
@@ -25,7 +24,7 @@ function login() {
 function loginValidation(parameter1,parameter2) {
     let details_exist = false;  
     let len = user_details.length;
-    for (i = 0; i<len ;i++) {
+    for (let i = 0; i<len ;i++) {
         let indexOf = user_details[i];
         let numeric = indexOf.length;
         for (i=0; i<numeric; i++) {
