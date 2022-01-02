@@ -6,7 +6,7 @@ function whilePageLoad() {
     }
 }
 whilePageLoad();
-function register() {
+function register(event) {
     event.preventDefault();
     let inputName = document.getElementById("name").value;
     let inputPhone = document.getElementById("phone_no").value;
@@ -46,7 +46,7 @@ function register() {
 function phoneChecking(phone_number) {
     let No_exist = false;    
     let lengthOfUserDetails = user_details.length;
-    for (i = 0 ; i<lengthOfUserDetails; i++) {
+    for (let i = 0 ; i<lengthOfUserDetails; i++) {
         let indexNumber = user_details[i];
         let getting_phone_number = indexNumber.phoneNumber;
         if (phone_number == getting_phone_number) {
