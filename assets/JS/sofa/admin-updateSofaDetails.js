@@ -40,6 +40,6 @@ function addDetailsHandler(event) {
         "image" : image
     }
     itemDetails.push(details);
-    convertToString = JSON.stringify(itemDetails);
+    let convertToString = JSON.stringify(itemDetails);
     localStorage.setItem("productDetails", convertToString); 
 }

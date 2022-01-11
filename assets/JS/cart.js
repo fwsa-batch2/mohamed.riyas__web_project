@@ -12,7 +12,7 @@ const nameUrl = urlParams.get("name");
 let getData = JSON.parse(localStorage.getItem("productDetails"));
 function addCart(event) {
     event.preventDefault();
-    for (i=0; i<getData.length; i++) {
+    for (let i=0; i<getData.length; i++) {
         let indexNumber = getData[i].itemName;
         if (indexNumber == nameUrl) {
             let name = getData[i].itemName;

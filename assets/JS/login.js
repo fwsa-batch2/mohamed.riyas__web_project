@@ -28,7 +28,7 @@ function loginValidation(parameter1,parameter2) {
     for (let i = 0; i<len ;i++) {
         let indexOf = user_details[i];
         let numeric = indexOf.length;
-        for (j=0; j<numeric; j++) {
+        for (let j=0; j<numeric; j++) {
             let getting_email = indexOf[j].emailId;
             console.log(getting_email);
             let get_password = indexOf[j].password;
