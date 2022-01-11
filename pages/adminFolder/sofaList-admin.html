@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .admin_form {
+        line-height: 60px;
+        background-color:  blue;
+        width: 30%;
+        margin-left: 40%;
+    }
+    .admin_form input {
+        width: 98%;
+        height: 35px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .btn-admin {
+        width: 100%;
+        height: 35px;
+        border-radius: 10px;
+    }
+    #sofa {
+        width: 98%;
+        height: 35px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="admin_form">
+        <h2 style="text-align: center;">ADMIN SOFA LIST</h2>
+        <form onsubmit="getdetails(event)">
+            <input type="text" id="productName" placeholder="Enter the product Name"><br>
+            <select id="sofa">
+                <option value="3SeaterSofa">3 Seater Sofa</option>
+                <option value="2seaterSofa">2 Seater Sofa</option>
+                <option value="singleSeaterSofa">Single Seater Sofa</option>
+                <option value="LShapeSofa">L Shape Sofa</option>
+            </select><br>
+            <input type="text" id="company" placeholder="Company Name"><br>
+            <input type="text" id="price" placeholder="price"><br>
+            <input type="url" id="productimage" placeholder="Image Location"><br>
+            <button type="submit" class="btn-admin">Submit</button>
+        </form>
+    </div>
+    <script src="./../../assets/JS/admin-updateSofaList.js"></script>
+</body>
+</html>

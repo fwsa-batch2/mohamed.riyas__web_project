@@ -13,7 +13,6 @@ function register(event) {
     let inputEmail = document.getElementById("email").value;
     let inputPassword = document.getElementById("password").value;
     let inputCPassword = document.getElementById("confirmPassword").value;
-
     let PhoneNo_validation = phoneChecking(inputPhone);
     let emailValidation = check_email(inputEmail);
     if (PhoneNo_validation) {

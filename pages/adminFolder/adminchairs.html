@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin chairs</title>
+    <style>
+        .admin_form {
+            line-height: 60px;
+            width: 30%;
+            margin-left: 40%;
+        }
+        .admin_form input {
+            width: 98%;
+            height: 35px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .btn-admin {
+            width: 100%;
+            height: 35px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin_form">
+        <h1 style="text-align: center;">ADD DETAILS</h1>
+        <form onsubmit="addDetailsHandler(event)">
+            <input type="text" id="productName" placeholder="ENTER PRODUCT NAME"><br>
+            <input type="text" id="productPrice" placeholder="ENTER PRODUCT PRICE"><br>
+            <input type="text" id="productApplication" placeholder="ENTER PRODUCT APPLICATIONS"><br>
+            <input type="text" id="productcompany" placeholder="ENTER PRODUCT BRAND"><br>
+            <input type="text" id="productColor" placeholder="ENTER PRODUCT COLOR"><br>
+            <input type="text" id="productAppearance" placeholder="ENTER PRODUCT APPEARANCE"><br>
+            <input type="text" id="number" placeholder="ENTER YOUR MODEL NUMBER"><br>
+            <input type="text" id="footrest" placeholder="FOOTREST INCLUDED"><br>
+            <input type="text" id="armrest" placeholder="AMREST INCLUDED"><br>
+            <input type="text" id="wheels" placeholder="WHEELS INCLUDED"><br>
+            <input type="text" id="careInstructions" placeholder="ENTER CARE INSTRUCTIONS"><br>
+            <input type="text" id="warranty" placeholder="ENTER WARRANTY"><br>
+            <input type="text" id="highlights" placeholder="HIGHLIGHTS OF THE PRODUCT"><br>
+            <input type="url" id="productImage" placeholder="ENTER THE URL OF THE IMAGE"><br>
+            <button type="submit" class="btn-admin">Submit</button>
+        </form>
+    </div>
+    <script src="./../../assets/JS/admin-updateDetails.js"></script>
+</body>
+</html>

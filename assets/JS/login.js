@@ -13,8 +13,9 @@ function login(event) {
     }
     let ValidationProcess = loginValidation(inputEmail,inputPassword);
     console.log(ValidationProcess);
-    if (ValidationProcess) {
+    if (ValidationProcess == false) {
         alert("Login details are inavlid");
+        return;
     }
     else {
         updateuserdetails(login_details)
@@ -27,9 +28,10 @@ function loginValidation(parameter1,parameter2) {
     for (let i = 0; i<len ;i++) {
         let indexOf = user_details[i];
         let numeric = indexOf.length;
-        for (i=0; i<numeric; i++) {
-            let getting_email = indexOf[i].emailId;
-            let get_password = indexOf[i].password;
+        for (j=0; j<numeric; j++) {
+            let getting_email = indexOf[j].emailId;
+            console.log(getting_email);
+            let get_password = indexOf[j].password;
             if ((parameter1 == getting_email)&&(parameter2 == get_password)) {
                 details_exist = true;
                 break;
