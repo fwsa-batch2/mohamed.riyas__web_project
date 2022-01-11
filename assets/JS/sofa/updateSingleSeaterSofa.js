@@ -1,8 +1,8 @@
 let updateHtml = "";
 function getSingleSeaterSofadata() {
     let details= JSON.parse(localStorage.getItem("singleSeaterSofaStorage"));
-    for (let i = 0; i < details.length; i++) {
-        updateHtml += "<div class=\"product\"><a href='./../../pages/details.html?name=" + details[i].itemName + "'><img src="+ details[i].itemImage + " class=\"productImage\"></a><br><div class=\"product_description\"><strong>"+ details[i].itemName + "</strong><p> by " + details[i].itemCompany + "</p><p>&#x20b9;" + details[i].itemPrice + "</p></div></div>"
+    for (let i of details) {
+        updateHtml += "<div class=\"product\"><a href='./../../pages/details.html?name=" + i.itemName + "'><img src="+ i.itemImage + " class=\"productImage\"></a><br><div class=\"product_description\"><strong>"+ i.itemName + "</strong><p> by " + i.itemCompany + "</p><p>&#x20b9;" + i.itemPrice + "</p></div></div>"
     }
     return updateHtml;
 }

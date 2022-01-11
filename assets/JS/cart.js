@@ -12,15 +12,15 @@ const nameUrl = urlParams.get("name");
 let getData = JSON.parse(localStorage.getItem("productDetails"));
 function addCart(event) {
     event.preventDefault();
-    for (let i=0; i<getData.length; i++) {
-        let indexNumber = getData[i].itemName;
+    for (let i of getData) {
+        let indexNumber = i.itemName;
         if (indexNumber == nameUrl) {
-            let name = getData[i].itemName;
-            let price = getData[i].itemPrice;
-            let usage = getData[i].itemApplications;
-            let color = getData[i].itemColor;
-            let appearance = getData[i].itemappearance;
-            let image = getData[i].image;
+            let name = i.itemName;
+            let price = i.itemPrice;
+            let usage = i.itemApplications;
+            let color = i.itemColor;
+            let appearance = i.itemappearance;
+            let image = i.image;
             let cartProduct = {
                 "itemName" : name,
                 "itemPrice" : price,
