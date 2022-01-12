@@ -13,13 +13,12 @@ function login(event) {
     }
     let ValidationProcess = loginValidation(inputEmail,inputPassword);
     console.log(ValidationProcess);
-    if (ValidationProcess == false) {
-        alert("Login details are inavlid");
-        return;
-    }
-    else {
+    if (ValidationProcess) {
         updateuserdetails(login_details)
         window.location.href = "./../../index.html";
+    }
+    else {
+        alert("Login details are inavlid");
     }
 }
 function loginValidation(parameter1,parameter2) {

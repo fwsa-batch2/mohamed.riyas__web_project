@@ -8,7 +8,7 @@ function whilepageLoad() {
     if ((barChairData != null)||(officeChairData != null)||(designerChairData != null)) {
         barChairStorage = barChairData;
         officeChairStorage = officeChairData;
-        designerChairData = designerChairStorage;
+        designerChairStorage = designerChairData;
     }
 }
 whilepageLoad();
