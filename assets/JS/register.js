@@ -1,7 +1,10 @@
 let user_details = [];
 function whilePageLoad() {
     let getting_details = JSON.parse(localStorage.getItem("customer_details"));
-    if (getting_details != null) {
+    if (getting_details == null) {
+        localStorage.setItem("customer_details",JSON.stringify(user_details));
+    }
+    else {
         user_details = getting_details;
     }
 }

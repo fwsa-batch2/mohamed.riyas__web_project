@@ -1,19 +1,32 @@
 let barChairStorage = [];
 let officeChairStorage = [];
 let designerChairStorage = [];
-function whilepageLoad() {
-    let barChairData  =  JSON.parse(localStorage.getItem("bar chair_Storage"));
-    let officeChairData = JSON.parse(localStorage.getItem("Office Chair Storage"));
-    let designerChairData = JSON.parse(localStorage.getItem("Designer Chair Storage"));
-    if ((barChairData != null)||(officeChairData != null)||(designerChairData != null)) {
+function getBarChairData() {
+    let barChairData = JSON.parse(localStorage.getItem("bar chair_Storage"));
+    
+    if (barChairData == null) {
+        localStorage.setItem("bar chair_Storage",JSON.stringify(barChairStorage));
+    }
+    else {
         barChairStorage = barChairData;
-        officeChairStorage = officeChairData;
-        designerChairStorage = designerChairData;
     }
 }
-whilepageLoad();
+getBarChairData();
+function getOfficeChairData() {
+    let officeChairData = JSON.parse(localStorage.getItem("Office Chair Storage"));
+    if (officeChairData == null) {
+        localStorage.setItem("Office Chair Storage",JSON.stringify([]));
+    }
+    else {
+        officeChairStorage = officeChairData;
+    }
+}
+getOfficeChairData();
+function getDesignerChairData() {
+    let designer
+}
 function getdetails(event) {
-    event.preventDefault()
+    event.preventDefault();
     let name = document.getElementById("productName").value;
     let companyName = document.getElementById("company").value;
     let brand = document.getElementById("price").value;
