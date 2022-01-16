@@ -15,7 +15,7 @@ getBarChairData();
 function getOfficeChairData() {
     let officeChairData = JSON.parse(localStorage.getItem("Office Chair Storage"));
     if (officeChairData == null) {
-        localStorage.setItem("Office Chair Storage",JSON.stringify([]));
+        localStorage.setItem("Office Chair Storage",JSON.stringify(officeChairStorage));
     }
     else {
         officeChairStorage = officeChairData;
@@ -23,8 +23,15 @@ function getOfficeChairData() {
 }
 getOfficeChairData();
 function getDesignerChairData() {
-    let designer
+    let designerChairData = JSON.parse(localStorage.getItem("Designer Chair Storage"));
+    if (designerChairData == null) {
+        localStorage.setItem("Designer Chair Storage",JSON.stringify(designerChairStorage));
+    }
+    else {
+        designerChairStorage = designerChairData;
+    }
 }
+getDesignerChairData();
 function getdetails(event) {
     event.preventDefault();
     let name = document.getElementById("productName").value;

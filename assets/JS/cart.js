@@ -1,7 +1,10 @@
 let cartStorage =[];
 function whilepageLoad() {
     let getCartStorage = JSON.parse(localStorage.getItem("cartStorage"));
-    if (getCartStorage != null) {
+    if (getCartStorage == null) {
+        localStorage.setItem("cartStorage",JSON.stringify(cartStorage));
+    }
+    else {
         cartStorage = getCartStorage;
     }
 }

@@ -2,6 +2,9 @@ let itemDetails = [];
 function onPageLoad() {
     let gettingDetails = JSON.parse(localStorage.getItem("productDetails"));
     if (gettingDetails != null) {
+        localStorage.setItem("productDetails",JSON.stringify(itemDetails));
+    }
+    else {
         itemDetails = gettingDetails;
     }
 }

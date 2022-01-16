@@ -2,22 +2,46 @@ let threeSeaterSofa = [];
 let twoSeaterSofa = [];
 let singleSeaterSofa = [];
 let lShapeSofa = [];
-let sofaBed = [];
-function whilepageLoad() {
+function getthreeSeaterSofaData() {
     let threeSeaterSofaData  =  JSON.parse(localStorage.getItem("threeSeaterSofaStorage"));
-    let twoSeaterSofaData = JSON.parse(localStorage.getItem("twoSeaterSofaStorage"));
-    let singleSeaterSofaData = JSON.parse(localStorage.getItem("singleSeaterSofaStorage"));
-    let lShapeSofaData = JSON.parse(localStorage.getItem("LShapeSofaStorage"));
-    let sofaBedData = JSON.parse(localStorage.getItem("SofaBedStorage"));
-    if ((threeSeaterSofaData != null)||(twoSeaterSofaData != null)||(singleSeaterSofaData != null)||(lShapeSofaData != null)||(sofaBedData != null)) {
+    if (threeSeaterSofaData == null) {
+        localStorage.setItem("threeSeaterSofaStorage",JSON.stringify(threeSeaterSofa));
+    }
+    else {
         threeSeaterSofa = threeSeaterSofaData;
-        twoSeaterSofa = twoSeaterSofaData;
-        singleSeaterSofa = singleSeaterSofaData;
-        lShapeSofa = lShapeSofaData;
-        sofaBed = sofaBedData;
     }
 }
-whilepageLoad();
+getthreeSeaterSofaData();
+function gettwoSeaterSofaData() {
+    let twoSeaterSofaData  =  JSON.parse(localStorage.getItem("twoSeaterSofaStorage"));
+    if (twoSeaterSofaData == null) {
+        localStorage.setItem("twoSeaterSofaStorage",JSON.stringify(twoSeaterSofa));
+    }
+    else {
+        twoSeaterSofa = twoSeaterSofaData;
+    }
+}
+gettwoSeaterSofaData();
+function getSingleSeaterSofa() {
+    let singleSeaterSofaData = JSON.parse(localStorage.getItem("singleSeaterSofaStorage"));
+    if (singleSeaterSofaData == null) {
+        localStorage.setItem("singleSeaterSofaStorage",JSON.stringify(singleSeaterSofa));
+    }
+    else {
+        singleSeaterSofa = singleSeaterSofaData;
+    }
+}
+getSingleSeaterSofa();
+function getLShapeSofaData() {
+    let lShapeSofaData = JSON.parse(localStorage.getItem("LShapeSofaStorage"));
+    if (lShapeSofaData == null) {
+        localStorage.setItem("LShapeSofaStorage",JSON.stringify(lShapeSofa));
+    }
+    else {
+        lShapeSofa = lShapeSofaData;
+    }
+}
+getLShapeSofaData();
 function getdetails(event) {
     event.preventDefault()
     let name = document.getElementById("productName").value;
