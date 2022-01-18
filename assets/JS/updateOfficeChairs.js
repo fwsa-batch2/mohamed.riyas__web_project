@@ -7,4 +7,4 @@ function getOfficeChairData() {
     return updateHtml;
 }
 let callingOfficeChairData = getOfficeChairData();
-document.getElementById("3SeaterSofa").innerHTML = callingOfficeChairData;
+document.getElementById("officechair_products").innerHTML = callingOfficeChairData;
