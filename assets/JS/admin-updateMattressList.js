@@ -3,21 +3,46 @@ let queenMattress = [];
 let singleMatress = [];
 let superSingleMatress = [];
 let beddingAccessories = [];
-function whilepageLoad() {
+function getKingMattressData() {
     let kingMattressData  =  JSON.parse(localStorage.getItem("KingMattressStorage"));
-    let queenMattressData = JSON.parse(localStorage.getItem("QueenMattressStorage"));
-    let singleMatressData = JSON.parse(localStorage.getItem("singlemattressStorage"));
-    let superSingleMatressData = JSON.parse(localStorage.getItem("superSingleMattressStorage"));
-    let beddingAccessoriesData = JSON.parse(localStorage.getItem("beddingAccessoriesStorage"));
-    if ((kingMattressData != null)||(queenMattressData != null)||(singleMatressData != null)||(superSingleMatressData != null)||(beddingAccessoriesData != null)) {
+    if (kingMattressData == null) {
+        localStorage.setItem("KingMattressStorage",JSON.stringify(kingMattress));
+    }
+    else {
         kingMattress = kingMattressData;
-        queenMattress = queenMattressData;
-        singleMatress = singleMatressData;
-        superSingleMatress = superSingleMatressData;
-        beddingAccessories = beddingAccessoriesData;
     }
 }
-whilepageLoad();
+getKingMattressData();
+function getQueenMattressData() {
+    let queenMattressData = JSON.parse(localStorage.getItem("QueenMattressStorage"));
+    if (queenMattressData == null) {
+        localStorage.setItem("QueenMattressStorage",JSON.stringify(queenMattress));
+    }
+    else {
+        queenMattress = queenMattressData;
+    }
+}
+getQueenMattressData();
+function getSingleMattressData() {
+    let singleMatressData = JSON.parse(localStorage.getItem("singlemattressStorage"));
+    if (singleMatressData == null) {
+        localStorage.setItem("singlemattressStorage",JSON.stringify(singleMatress));
+    }
+    else {
+        singleMatress = singleMatressData;
+    }
+}
+getSingleMattressData();
+function getSuperSingleMattressData() {
+    let superSingleMatressData = JSON.parse(localStorage.getItem("superSingleMattressStorage"));
+    if (superSingleMatressData == null) {
+        localStorage.setItem("superSingleMattressStorage",JSON.stringify(superSingleMatress));
+    }
+    else {
+        superSingleMatress = superSingleMatressData;
+    }
+}
+getSuperSingleMattressData();
 function getdetails(event) {
     event.preventDefault();
     let name = document.getElementById("productName").value;
@@ -37,21 +62,25 @@ function getdetails(event) {
             kingMattress.push(productDetails);
             let convertingString = JSON.stringify(kingMattress);
             localStorage.setItem("KingMattressStorage",convertingString);
+            window.location.href = "./../mattresspages/kingMattress.html";
             break;
         case "QueenMattress": 
             queenMattress.push(productDetails);
             let convertFromObject = JSON.stringify(queenMattress);
             localStorage.setItem("QueenMattressStorage",convertFromObject);
+            window.location.href = "./../mattresspages/queenMattress.html";
             break;
         case "singlemattress": 
             singleMatress.push(productDetails);
             let convertString = JSON.stringify(singleMatress);
             localStorage.setItem("singlemattressStorage",convertString);
+            window.location.href = "./../mattresspages/singleMattress.html";
             break;
         case "superSingleMattress":
             superSingleMatress.push(productDetails);
             let convertToString = JSON.stringify(superSingleMatress);
             localStorage.setItem("superSingleMattressStorage",convertToString);
+            window.location.href = "./../mattresspages/superSingleMattress.html";
             break;
         case "beddingAccessories":
             beddingAccessories.push(productDetails);

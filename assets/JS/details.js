@@ -14,5 +14,4 @@ function updateDetails() {
     return str;
 }
 let callingUpdateDetails = updateDetails();
-console.log(callingUpdateDetails);
 document.getElementById("barChairDetails").innerHTML = callingUpdateDetails;
