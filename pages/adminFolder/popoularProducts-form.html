@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Products</title>
+    <style>
+        .popularProducts-form {
+            line-height: 60px;
+            width: 30%;
+            margin-left: 40%;
+        }
+        .popularProducts-form input {
+            width: 98%;
+            height: 35px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .admin-btn {
+            width: 100%;
+            height: 35px;
+            border-radius: 10px;
+    }
+        #productCategory {
+            width: 98%;
+            height: 35px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="popularProducts-form">
+        <form onsubmit="submithandler(event);">
+            <h2 style="text-align: center;">Popular Products Form</h2>
+            <input type="text" id="popularProductName" placeholder="Enter Product Name" required><br>
+            <select id="productCategory">
+                <option value="Bar Chair">Bar Chair</option>
+                <option value="Designer Chair">Designer Chair</option>
+                <option value="Office Chair">Office Chair</option>
+                <option value="3 Seater Sofa">3 Seater Sofa</option>
+                <option value="2 Seater Sofa">2 Seater Sofa</option>
+                <option value="1 Seater Sofa">1 Seater Sofa</option>
+                <option value="L Shape Sofa">L Shape Sofa</option>
+                <option value="King Mattress">King Mattress</option>
+                <option value="Queen Mattress">Queen Mattress</option>
+                <option value="Single Mattress">Single Mattress</option>
+                <option value="Super Single Mattress">Super Single Mattress</option>
+                <option value="Bedding Accessories">Bedding Accessories</option>
+            </select><br>
+            <button type="submit" class="admin-btn">ADD AS A POPULAR PRODUCT</button>
+        </form>
+    </div>
+    <script src="./../../assets/JS/popularProducts.js"></script>
+</body>
+</html>

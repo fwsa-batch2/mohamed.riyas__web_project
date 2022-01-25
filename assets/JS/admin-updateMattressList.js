@@ -86,6 +86,7 @@ function getdetails(event) {
             beddingAccessories.push(productDetails);
             let stringConvertion = JSON.stringify(beddingAccessories);
             localStorage.setItem("beddingAccessoriesStorage",stringConvertion);
+            window.location.href = "./../mattresspages/beddingAccessories.html";
             break;
     }
 }

@@ -76,6 +76,9 @@ div.description {
   transform: rotateY(180deg);
   transition: 1.5s;
 }
+.famousProducts {
+  padding-left: 5%;
+}
 .account {
   margin-left: 40%;
   margin-top: 5%;
