@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>admin-chairsList form</title>
+    <title>admin- Add Chair</title>
     <style>
         .admin_form {
             line-height: 60px;
@@ -32,21 +32,36 @@
     </style>
 </head>
 <body>
-    <div class="admin_form">
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        
         <h2 style="text-align: center;">ADMIN CHAIRS LIST</h2>
-        <form onsubmit="getdetails(event)">
-            <input type="text" id="productName" placeholder="Enter the product Name"><br>
-            <select id="chairs">
+        <section class="admin_form">
+            <!--addChairDetail()-->
+            <form onsubmit="addChairDetail(event)">
+            <div>
+                <input type="text" id="productName" placeholder="Enter the product Name" required autofocus>
+            </div>
+            
+            <!-- id=chair-->
+            <select id="chairs" required >
+                <!-- <option value="BC">Bar Chair</option> -->
                 <option value="Bar Chair">Bar Chair</option>
                 <option value="office Chair">Office Chair</option>
                 <option value="Designer Chair">Designer Chair</option>
             </select>
-            <input type="text" id="company" placeholder="Company Name"><br>
-            <input type="text" id="price" placeholder="price"><br>
-            <input type="url" id="productimage" placeholder="Image Location">
+            <input type="text" id="company" placeholder="Company Name" required><br/>
+            <input type="number" id="price" placeholder="price" min="1" max="100000" required><br/>
+            <input type="url" id="productimage" placeholder="Image URL(png,jpeg)"required>
             <button type="submit" class="btn-admin">Submit</button>
         </form>
-    </div>
+    </section>
+</main>
+<footer>
+
+</footer>
 <script src="./../../assets/JS/admin-updateChairsList.js"></script>
 </body>
 </html>
