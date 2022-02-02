@@ -21,18 +21,18 @@
   margin: 0;
   padding: 10px;
 }
-.list li {
+.nav_list li {
   list-style-type: none;
   display: inline;
   padding-left: 30px;
   font-size: x-large;
 }
 
-.list a {
+.nav_list a {
   text-decoration: none;
   color: black;
 }
-.list {
+.nav_list {
   margin: 15px 0 10px 50%;
   width: auto;
   position: absolute;

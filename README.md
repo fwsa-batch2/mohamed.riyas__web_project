@@ -1,7 +1,11 @@
 # Mobel furniture app.
 
-#### Netlify URL
-* https://mobelfurnitureapp-ui-mohamedriyas.netlify.app/
+#### LIVE URL LINK
+* https://fwsa-batch2.github.io/mohamed.riyas__web_project/
+#### GITHUB REPO
+* https://github.com/fwsa-batch2/mohamed.riyas__web_project
+#### SONARCLOUD LINK 
+* https://sonarcloud.io/project/overview?id=fwsa-batch2_mohamed.riyas__web_project
 
 #### Features
 * Login

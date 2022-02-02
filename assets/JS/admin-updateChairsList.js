@@ -37,7 +37,7 @@ function getDesignerChairData() {
     }
 }
 getDesignerChairData();
-function getdetails(event) {
+function addChairDetail(event) {
     event.preventDefault();
     //Step 1:Get Form Values
     let name = document.getElementById("productName").value;
@@ -78,9 +78,9 @@ function getdetails(event) {
     
 }
 
-function searchChairsByProductType(productType){
-    let chairs = JSON.parse(localStorage.getItem("CHAIRS")); //BAR_CHAIRS   
-    if(chairs)return [];
-    const filteredChairs = chairs.filter(obj=> obj.productType == productType);
-    return filteredChairs;
-}
+// function searchChairsByProductType(productType){
+//     let chairs = JSON.parse(localStorage.getItem("CHAIRS")); //BAR_CHAIRS   
+//     if(chairs)return [];
+//     const filteredChairs = chairs.filter(obj=> obj.productType == productType);
+//     return filteredChairs;
+// }
