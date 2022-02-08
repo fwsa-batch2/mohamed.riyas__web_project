@@ -32,22 +32,36 @@
     </style>
 </head>
 <body>
-    <div class="admin_form">
+    <main>
         <h2 style="text-align: center;">ADMIN SOFA LIST</h2>
-        <form onsubmit="getdetails(event)">
-            <input type="text" id="productName" placeholder="Enter the product Name"><br>
-            <select id="sofa">
-                <option value="3SeaterSofa">3 Seater Sofa</option>
-                <option value="2seaterSofa">2 Seater Sofa</option>
-                <option value="singleSeaterSofa">Single Seater Sofa</option>
-                <option value="LShapeSofa">L Shape Sofa</option>
-            </select><br>
-            <input type="text" id="company" placeholder="Company Name"><br>
-            <input type="text" id="price" placeholder="price"><br>
-            <input type="url" id="productimage" placeholder="Image Location"><br>
-            <button type="submit" class="btn-admin">Submit</button>
-        </form>
-    </div>
-    <script src="./../../assets/JS/admin-updateSofaList.js"></script>
+        <section class="admin_form">
+            <form onsubmit="addSofa(event)">
+                <div>
+                    <input type="text" id="productName" placeholder="Enter the product Name">
+                </div>
+                <div>
+                    <select id="sofa">
+                        <option value="3SeaterSofa">3 Seater Sofa</option>
+                        <option value="2seaterSofa">2 Seater Sofa</option>
+                        <option value="singleSeaterSofa">Single Seater Sofa</option>
+                        <option value="LShapeSofa">L Shape Sofa</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" id="company" placeholder="Company Name"><br>
+                </div>
+                <div>
+                    <input type="text" id="price" placeholder="price"><br>
+                </div>
+                <div>
+                    <input type="url" id="productimage" placeholder="Image Location"><br>
+                </div>
+                <div>
+                    <button type="submit" class="btn-admin">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="./../../assets/JS/addSofa.js"></script>
 </body>
 </html>

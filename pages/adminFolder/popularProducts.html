@@ -31,27 +31,35 @@
     </style>
 </head>
 <body>
-    <div class="popularProducts-form">
-        <form onsubmit="submithandler(event);">
-            <h2 style="text-align: center;">Popular Products Form</h2>
-            <input type="text" id="popularProductName" placeholder="Enter Product Name" required><br>
-            <select id="productCategory">
-                <option value="Bar Chair">Bar Chair</option>
-                <option value="Designer Chair">Designer Chair</option>
-                <option value="Office Chair">Office Chair</option>
-                <option value="3 Seater Sofa">3 Seater Sofa</option>
-                <option value="2 Seater Sofa">2 Seater Sofa</option>
-                <option value="1 Seater Sofa">1 Seater Sofa</option>
-                <option value="L Shape Sofa">L Shape Sofa</option>
-                <option value="King Mattress">King Mattress</option>
-                <option value="Queen Mattress">Queen Mattress</option>
-                <option value="Single Mattress">Single Mattress</option>
-                <option value="Super Single Mattress">Super Single Mattress</option>
-                <option value="Bedding Accessories">Bedding Accessories</option>
-            </select><br>
-            <button type="submit" class="admin-btn">ADD AS A POPULAR PRODUCT</button>
-        </form>
-    </div>
+    <main>
+        <h2 style="text-align: center;">Popular Products Form</h2>
+        <section class="popularProducts-form">
+            <form onsubmit="submithandler(event);">
+                <div>
+                    <input type="text" id="popularProductName" placeholder="Enter Product Name" required autofocus>
+                </div>
+                <div>
+                    <select id="productCategory">
+                        <option value="Bar Chair">Bar Chair</option>
+                        <option value="Designer Chair">Designer Chair</option>
+                        <option value="Office Chair">Office Chair</option>
+                        <option value="3 Seater Sofa">3 Seater Sofa</option>
+                        <option value="2 Seater Sofa">2 Seater Sofa</option>
+                        <option value="1 Seater Sofa">1 Seater Sofa</option>
+                        <option value="L Shape Sofa">L Shape Sofa</option>
+                        <option value="King Mattress">King Mattress</option>
+                        <option value="Queen Mattress">Queen Mattress</option>
+                        <option value="Single Mattress">Single Mattress</option>
+                        <option value="Super Single Mattress">Super Single Mattress</option>
+                        <option value="Bedding Accessories">Bedding Accessories</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit" class="admin-btn">ADD AS A POPULAR PRODUCT</button>
+                </div>
+            </form>
+        </section>
+    </main>
     <script src="./../../assets/JS/popularProducts.js"></script>
 </body>
 </html>

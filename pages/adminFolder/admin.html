@@ -8,7 +8,6 @@
     <style>
         .admin_form {
             line-height: 60px;
-            background-color:  blue;
             width: 30%;
             margin-left: 40%;
         }
@@ -29,39 +28,46 @@
             border-radius: 10px;
             text-align: center;
         }
+        #addingProcessResult {
+            color: red;
+            font-size: large;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <nav></nav>
-    </header>
     <main>
-        
-        <h2 style="text-align: center;">ADMIN CHAIRS LIST</h2>
+        <h2 style="text-align: center;">ADD CHAIRS LIST</h2>
         <section class="admin_form">
             <!--addChairDetail()-->
             <form onsubmit="addChairDetail(event)">
-            <div>
-                <input type="text" id="productName" placeholder="Enter the product Name" required autofocus>
-            </div>
-            
-            <!-- id=chair-->
-            <select id="chairs" required >
-                <!-- <option value="BC">Bar Chair</option> -->
-                <option value="Bar Chair">Bar Chair</option>
-                <option value="office Chair">Office Chair</option>
-                <option value="Designer Chair">Designer Chair</option>
-            </select>
-            <input type="text" id="company" placeholder="Company Name" required><br/>
-            <input type="number" id="price" placeholder="price" min="1" max="100000" required><br/>
-            <input type="url" id="productimage" placeholder="Image URL(png,jpeg)"required>
-            <a href="./../barchairpages/barchair.html"><button type="submit" class="btn-admin">Submit</button></a>
-        </form>
-    </section>
-</main>
-<footer>
-
-</footer>
-<script src="./../../assets/JS/admin-updateChairsList.js"></script>
+                <div>
+                    <input type="text" id="productName" placeholder="Enter the product Name" required autofocus>
+                </div>
+                <!-- id=chair-->
+                <div>
+                    <select id="chairs" required >
+                        <option value="BC">Bar Chair</option>
+                        <option value="OC">Office Chair</option>
+                        <option value="DC">Designer Chair</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" id="company" placeholder="Company Name" required>
+                </div>
+                <div>
+                    <input type="number" id="price" max="100000" placeholder="price" required><br/>
+                </div>
+                <div>
+                    <input type="url" id="productimage" placeholder="Image URL(png,jpeg)"required>
+                </div>
+                <div>
+                    <a href="./../barchairpages/barchair.html"><button type="submit" class="btn-admin">Submit</button></a>
+                </div>
+            </form>
+            <div id="addingProcessResult"></div>
+        </section>
+    </main>
+<script src="./../../assets/JS/addChairsList.js"></script>
 </body>
 </html>

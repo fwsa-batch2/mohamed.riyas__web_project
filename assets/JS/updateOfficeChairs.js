@@ -1,10 +1,11 @@
 let updateHtml = "";
-function updateOfficeChairs() {
-    let details= JSON.parse(localStorage.getItem("Office Chair Storage"));
+function addOfficeChairs() {
+    let details= JSON.parse(localStorage.getItem("Chairs"));
     for (let i of details) {
-        updateHtml += "<div class=\"product\"><a href='./../../pages/details.html?name=" + i.itemName + "'><img src="+ i.itemImage + " class=\"productImage\"></a><br><div class=\"product_description\"><strong>"+ i.itemName + "</strong><p> by " + i.itemCompany + "</p><p>&#x20b9;" + i.itemPrice + "</p></div></div>"
+        if (i.itemType == "OC") {
+            updateHtml += "<div class=\"product\"><a href='./../../pages/details.html?name=" + i.itemName + "'><img src="+ i.itemImage + " class=\"productImage\"></a><br><div class=\"product_description\"><strong>"+ i.itemName + "</strong><p> by " + i.itemCompany + "</p><p>&#x20b9;" + i.itemPrice + "</p></div></div>";
+        }
     }
     return updateHtml;
 }
-let callingOfficeChairs = updateOfficeChairs();
-document.getElementById("officechair_products").innerHTML = callingOfficeChairs;
+document.getElementById("officechair_products").innerHTML = addOfficeChairs();
