@@ -14,7 +14,7 @@ function getChairsData() {
 getChairsData();
 function addChairDetail(event) {
     event.preventDefault();
-    //Step 1:Get Form Values
+    //Step 1:Get Form Values.
     let name = document.getElementById("productName").value;
     let companyName = document.getElementById("company").value;
     let price = document.getElementById("price").value;

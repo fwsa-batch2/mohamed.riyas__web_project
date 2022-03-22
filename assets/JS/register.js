@@ -54,7 +54,7 @@ function phoneChecking(phone_number) {
             No_exist = true;
             break;
         }
-    }
+    }   
     return No_exist;
 }
 function check_email(paramter1) {

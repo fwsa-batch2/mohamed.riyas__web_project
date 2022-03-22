@@ -1,4 +1,4 @@
-let mattressStorage = [];
+let mattressStorage = [];   // [{}, {}]
 function getMattressData() {
     let mattressData  =  JSON.parse(localStorage.getItem("mattress"));
     if (mattressData == null) {
@@ -7,6 +7,12 @@ function getMattressData() {
     else {
         mattressStorage = mattressData; 
     }
+
+    // if(mattressData === null){
+    //     mattressData = [];
+    // }
+
+    // return mattressData;
 }
 getMattressData();
 function addMattress(event) {
@@ -28,6 +34,8 @@ function addMattress(event) {
     // Step 3: Whether already item is added in the same category
     let productExist = isProductAlreadyExist(productDetails);
     // Step 4: storing in local storage.
+// let mattressStorage = getMattressData();  // []  or [{}, {}, {}]
+
     if (productExist == false) {
         mattressStorage.push(productDetails);
         let convertTo_string = JSON.stringify(mattressStorage);

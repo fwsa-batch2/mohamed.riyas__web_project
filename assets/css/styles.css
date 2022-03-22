@@ -48,13 +48,14 @@ div.gallery {
   box-shadow: 8px 6px rgb(145, 143, 143);
 }
 
-div.gallery:hover {
+div.gallery:hover{
   border: 1px solid #777;
   transform: scale(1.04);
   transition: 1s;
+  
 }
 
-div.gallery img {
+.home_image {
   width: 100%;
   height: auto;
 }

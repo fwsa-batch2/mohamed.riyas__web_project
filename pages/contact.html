@@ -15,7 +15,7 @@
       <img src="./../assets/images/mobel.jpg" alt="logo" width="150px">
     </a>
 
-    <ul class="list" align="right">
+    <ul class="nav_list" align="right">
       <li><a href="./../index.html">Home</a></li>
       <li><a href="">Contact</a></li>
       <li><a href="">About us</a></li>
@@ -90,7 +90,7 @@
   </div>
 
   <div class="contact_div">
-    <form>
+    <form onsubmit="contactUs(event)">
       <h2 style="text-align: center;">CONTACT US</h2>
       <input type="text" placeholder="ENTER YOUR EMAIL"><br>
       <br>
@@ -101,10 +101,15 @@
       <button class="contact_button" type="submit">Send Message</button>
     </form>
   </div>
-  <img class="mail_image"  src="./../assets/images/mail.png" alt="mail">
-
+  <!-- <img class="mail_image"  src="./../assets/images/mail.png" alt="mail"> -->
+  <script>
+    function contactUs(event) {
+      event.preventDefault();
+      alert("Your query submitted successfully. We will reach you");
+    }
+  </script>
 </body>
-
+<!-- 
 </html>
 <h1 class="Products">Products</h1>
 <div class="icons">
@@ -193,4 +198,4 @@
   <div class="descriptions">
     <strong>DECOR</strong>
   </div>
-</div>
+</div> -->
