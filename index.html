@@ -230,6 +230,21 @@
     </div>
   </div>
   <script src="./index.js"></script>
+  <script>
+  function initFreshChat() {
+    window.fcWidget.init({
+      	 token: "8b98f37d-d729-4d74-ac3b-7d99bd683515",
+	 host: "https://tamilmani.freshchat.com",
+	 widgetUuid: "7a65fada-4a3b-493c-a14f-2efb7b41cba0"
+    });
+  }
+  function initialize(i,t){var e;i.getElementById(t)?
+  initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,
+  e.src="https://tamilmani.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}
+  function initiateCall(){initialize(document,"Freshchat-js-sdk")}
+  window.addEventListener?window.addEventListener("load",initiateCall,!1):
+  window.attachEvent("load",initiateCall,!1);
+</script>
 </body>
 
 </html>
