@@ -7,8 +7,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 let updateHtml = "";
 function updatePopularProducts() {
     let details= JSON.parse(localStorage.getItem("popularProducts"));
-    for (let i of details) {
-        updateHtml += "<div class='div_popularProducts'><a href='./pages/details.html?name="+i.name+"'><img src = "+i.image+" class='productImage'><div class='productDescription'><strong>"+i.name+"</strong></div></a></div>";
+    if (details) {
+        for (let i of details) {
+            updateHtml += "<div class='div_popularProducts'><a href='./pages/details.html?name="+i.name+"'><img src = "+i.image+" class='productImage'><div class='productDescription'><strong>"+i.name+"</strong></div></a></div>";
+        }
     }
     return updateHtml;
 }
